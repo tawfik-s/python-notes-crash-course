@@ -64,23 +64,66 @@ cars.reverse()
 len(cars)
 
 
+#for loop in python
+
+
+magicians=['alice','david','carolina']
+for magician in magicians:
+    print(f"{magician.title()}, we are lookin for you next trick")
+    
+
+#range()  function can be used to pirnt random numbers in a range
+for value in range(1,5):
+    print(value)
+
+numbers=list(range(1,6))
+print(numbers)
+
+even_numbers=list(range(2,11,2)) #third variable is the increased value default type=1
+print(even_numbers)  
+
+#you can get min,max,sum using this simple functions
+min(even_numbers)
+max(even_numbers)
+sum(even_numbers)
+
+squares=[value**2 for value in range(1,11)]
+print(squares)
 
 
 
+list=[value for value in range(1,12)]
+
+print(list)
+
+
+players=list[0:3]
+
+print(players)
+
+
+players2=list[:2]
+players3=list[3:0]
+
+players4 = ['charles', 'martina', 'michael', 'florence', 'eli']
 
 
 
+for player in players4[:3]:
+    print(player.title())
+
+
+copy=players4[:]  #copying the existing  list
+
+#if we do copy=players4   the two names will point to the same array in the memory
 
 
 
+#tuple use parentheses instead o fsquare brackets 
+#you can't change the tuble elements value
 
-
-
-
-
-
-
-
-
+dimensions=(200,50)
+print(dimensions[0])
+print(dimensions[1])
 
 
